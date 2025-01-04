@@ -1,0 +1,105 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "grade",
+						"type": "uint8"
+					}
+				],
+				"name": "addGrade",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "age",
+						"type": "uint8"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "age",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_3/Example_Codes/as3_ex_task3.sol": "task4"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_3/Example_Codes/as3_ex_task3.sol": {
+			"keccak256": "0x8bbf5a727f0e9bca172da2309c58a5d37742fcbf450da8e6a6a58f3f06ea6319",
+			"urls": [
+				"bzz-raw://cf68998e72cba50044b27886af41a2adfdcc6ed3c97208bc2077637ec85613ad",
+				"dweb:/ipfs/QmUSw5fqeEH164kyAUmn2ae7tSGiJSFA6Z9y6JzST6pbnh"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,153 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int128",
+						"name": "number",
+						"type": "int128"
+					}
+				],
+				"name": "division",
+				"outputs": [
+					{
+						"internalType": "int128",
+						"name": "",
+						"type": "int128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int128",
+						"name": "number",
+						"type": "int128"
+					}
+				],
+				"name": "multiplication",
+				"outputs": [
+					{
+						"internalType": "int128",
+						"name": "",
+						"type": "int128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int128",
+						"name": "number",
+						"type": "int128"
+					}
+				],
+				"name": "remainder",
+				"outputs": [
+					{
+						"internalType": "int128",
+						"name": "",
+						"type": "int128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int128",
+						"name": "number",
+						"type": "int128"
+					}
+				],
+				"name": "saveValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int128",
+						"name": "number",
+						"type": "int128"
+					}
+				],
+				"name": "substraction",
+				"outputs": [
+					{
+						"internalType": "int128",
+						"name": "",
+						"type": "int128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int128",
+						"name": "number",
+						"type": "int128"
+					}
+				],
+				"name": "summa",
+				"outputs": [
+					{
+						"internalType": "int128",
+						"name": "",
+						"type": "int128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_1/Example_Codes/as1_task3.sol": "task3"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_1/Example_Codes/as1_task3.sol": {
+			"keccak256": "0x5c1e35e317a75521beca236f870eb3f2353028e341953fdeb7bf47679c1689df",
+			"urls": [
+				"bzz-raw://dbc029319f996782c6176ae0986edf47b5d89612c0bd8b8c2eb3bc40edf95427",
+				"dweb:/ipfs/QmTUYrkjAcz6kaHuoCyzhwLz5dEmT4P2r3WrVLqaYHSdrf"
+			]
+		}
+	},
+	"version": 1
+}

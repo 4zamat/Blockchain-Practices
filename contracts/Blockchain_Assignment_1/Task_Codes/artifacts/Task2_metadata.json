@@ -1,0 +1,110 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getNumber16",
+				"outputs": [
+					{
+						"internalType": "int16",
+						"name": "",
+						"type": "int16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumber256",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSum",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int16",
+						"name": "number",
+						"type": "int16"
+					}
+				],
+				"name": "setNumber16",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "number",
+						"type": "int256"
+					}
+				],
+				"name": "setNumber256",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_1/Task_Codes/t_as1_task2.sol": "Task2"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_1/Task_Codes/t_as1_task2.sol": {
+			"keccak256": "0xad327e33af323380cdf3e00c5a51ede76cff75a8aa086df10f9bc1ddbb2bc520",
+			"urls": [
+				"bzz-raw://53dcf3b885ea4aff5d2987ac33bda67edea83bf34d6bcf358528e2dad20b49b2",
+				"dweb:/ipfs/QmbPhewxJCNeM1f92cR4UWZMCPiUvucU3jUHfeUc85Qy3X"
+			]
+		}
+	},
+	"version": 1
+}

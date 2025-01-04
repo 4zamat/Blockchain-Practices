@@ -1,0 +1,100 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "grade",
+						"type": "uint8"
+					}
+				],
+				"name": "addGrade",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "age",
+						"type": "uint8"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "age",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_3/Example_Codes/as3_ex_task6.sol": "task5"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_3/Example_Codes/as3_ex_task6.sol": {
+			"keccak256": "0xd54a6941f67f927433ee62480052152e6fc34b324031603178e85ea757ae96ec",
+			"urls": [
+				"bzz-raw://a2ee2122c5ca52119a1245d7b243dbdb17b715819b175abb871079bea722fdb6",
+				"dweb:/ipfs/QmQMkZigZRcJGWi3uh13k7deZcsC8Kgxk5dt12RFxr7UpW"
+			]
+		}
+	},
+	"version": 1
+}

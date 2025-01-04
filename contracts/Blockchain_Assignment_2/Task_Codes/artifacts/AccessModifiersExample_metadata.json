@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_number",
+						"type": "uint8"
+					}
+				],
+				"name": "setNumberExternal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_number",
+						"type": "uint8"
+					}
+				],
+				"name": "setNumberPublic",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_2/Task_Codes/as2_task2.sol": "AccessModifiersExample"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_2/Task_Codes/as2_task2.sol": {
+			"keccak256": "0xc200a877a3e4e859b76ebb64b906f7ce5088fbecad6f138fd645ceac7da0e02b",
+			"urls": [
+				"bzz-raw://723894799a436971439a363b9ed7e8fc52d73c2ac9c3b0415e48a85e6d091039",
+				"dweb:/ipfs/QmXkQNLSWELLPKGhxkrQKCBZiJnB7B4TWyj5u7bVRc4b98"
+			]
+		}
+	},
+	"version": 1
+}

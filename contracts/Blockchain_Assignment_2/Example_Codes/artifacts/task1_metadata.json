@@ -1,0 +1,124 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getNumbers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					}
+				],
+				"name": "getSumma",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_number2",
+						"type": "uint256"
+					}
+				],
+				"name": "getSumma",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_number2",
+						"type": "uint256"
+					}
+				],
+				"name": "setNumbers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_2/Example_Codes/as2_ex_task1.sol": "task1"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_2/Example_Codes/as2_ex_task1.sol": {
+			"keccak256": "0xffafab7c19215b843a20f1f11b0b2816e04058079e3cfc1b20ef8a81322d2aae",
+			"urls": [
+				"bzz-raw://6240914ed7b9540e74b9e1a0df18cd3febd908699e4dcd41ab000bf8d1a1aa9f",
+				"dweb:/ipfs/QmWVwiFAepoHVytm7y1crtaqhv48s6qruCnQeF7mz9bCRX"
+			]
+		}
+	},
+	"version": 1
+}

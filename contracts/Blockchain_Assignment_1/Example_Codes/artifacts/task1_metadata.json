@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getValue",
+				"outputs": [
+					{
+						"internalType": "int64",
+						"name": "",
+						"type": "int64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int64",
+						"name": "number",
+						"type": "int64"
+					}
+				],
+				"name": "saveValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_1/Example_Codes/as1_task1.sol": "task1"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_1/Example_Codes/as1_task1.sol": {
+			"keccak256": "0xf46e0b2d3e1a39fdcdaca6253ce0a3c8faa80873645b953e019096e1e637c51a",
+			"urls": [
+				"bzz-raw://32e6a9fd05d8058706dcffc89ded9dd8978a20b04d725f8a9a9f2f197f198928",
+				"dweb:/ipfs/QmWEugxi4oWjWXvc2ckbMe3TknZgoS9zGdeTqMU8sxgSoT"
+			]
+		}
+	},
+	"version": 1
+}

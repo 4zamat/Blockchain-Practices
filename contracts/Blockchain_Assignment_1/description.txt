@@ -1,0 +1,65 @@
+                                                         Example 5 
+Task 1
+Write a simple contract that contains one variable value of type int64
+
+This contract should also contain two functions:
+● a function that takes one argument - some number and stores its value in the variable value
+● a function that returns the value of the variable value, this function should have the view access modifier
+
+Task 2
+
+Write a contract that contains two variables:
+- an integer 16-bit number number16
+- an integer 256-bit number number256
+And five functions that perform the following actions:
+- takes an argument and initializes it with the value of the variable number16
+- takes an argument and initializes it with the value of the variable number256
+- returns the value of the variable number16
+- returns the value of the variable number256
+- returns the sum of the variables number16 and number256
+
+Task 3
+
+Write a contract that contains one variable value of type int128
+
+This contract should also contain six functions:
+● a function that takes one argument - some number and stores its value in the variable value
+● and five more functions, each of which takes one argument - some number, but they return different values:
+○ the sum of value and number
+○ the difference of value and number
+○ the product of value and number
+○ the result of dividing value by number
+○ the remainder of dividing value by number
+
+Task 4
+
+Write a contract that acts as a calculator
+Write five functions. Each of these functions should take two arguments - integers (int256) and return the result of performing one of the mathematical operations on these numbers:
+● Addition
+● Subtraction
+● Multiplication
+● Division
+● Remainder of division
+
+Task 5
+
+Upgrade the contract from the previous task
+It is necessary to store in memory information about the last operation performed on the calculator.
+
+To do this, you need to create:
+● four global variables
+○ They will store the values ​​of two operands, the result of the last mathematical operation performed by the calculator and the name of the mathematical operation (addition, subtraction, division, multiplication)
+● Four functions for four mathematical operations
+○ The functions must return the result of the operation
+○ In addition, each time any of these functions is called, the values ​​of the variables described above are updated
+● A function that returns information about the last operation performed
+○ The function returns four values ​​- two operands, the result of the operation and its name
+○ In the list of returned arguments, the string must be specified as string memory
+
+In addition, you are required to optimize the contract!
+It is known that the arguments that will be passed to the functions are non-negative integers, not exceeding 100,000 in value.
+Optimize the size of variables as much as possible so that as little gas as possible is spent on executing functions
+When optimizing the size of variables, keep in mind that the values ​​returned by the functions can be negative for the subtraction function, and for the addition and multiplication functions, the result of the action can be greater than the input values!
+Use type casting.
+Be sure to test all functions on the maximum and minimum input and output values!
+

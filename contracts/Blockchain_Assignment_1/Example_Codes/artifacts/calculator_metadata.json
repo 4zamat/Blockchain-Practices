@@ -1,0 +1,169 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int32",
+						"name": "number1",
+						"type": "int32"
+					},
+					{
+						"internalType": "int32",
+						"name": "number2",
+						"type": "int32"
+					}
+				],
+				"name": "division",
+				"outputs": [
+					{
+						"internalType": "int64",
+						"name": "",
+						"type": "int64"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLastOperation",
+				"outputs": [
+					{
+						"internalType": "int32",
+						"name": "",
+						"type": "int32"
+					},
+					{
+						"internalType": "int32",
+						"name": "",
+						"type": "int32"
+					},
+					{
+						"internalType": "int64",
+						"name": "",
+						"type": "int64"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int32",
+						"name": "number1",
+						"type": "int32"
+					},
+					{
+						"internalType": "int32",
+						"name": "number2",
+						"type": "int32"
+					}
+				],
+				"name": "multiplication",
+				"outputs": [
+					{
+						"internalType": "int64",
+						"name": "",
+						"type": "int64"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int32",
+						"name": "number1",
+						"type": "int32"
+					},
+					{
+						"internalType": "int32",
+						"name": "number2",
+						"type": "int32"
+					}
+				],
+				"name": "substraction",
+				"outputs": [
+					{
+						"internalType": "int64",
+						"name": "",
+						"type": "int64"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int32",
+						"name": "number1",
+						"type": "int32"
+					},
+					{
+						"internalType": "int32",
+						"name": "number2",
+						"type": "int32"
+					}
+				],
+				"name": "summa",
+				"outputs": [
+					{
+						"internalType": "int64",
+						"name": "",
+						"type": "int64"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_1/Example_Codes/as1_task5.sol": "calculator"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_1/Example_Codes/as1_task5.sol": {
+			"keccak256": "0x5146d164c64b5b7290c1476b9f57b9e2ea132acf174a34b206b4a68a9a7873c4",
+			"urls": [
+				"bzz-raw://6167f168d351ebc08bf4272c165d0a304271a2e82e700066a2d5a51b8d8429e7",
+				"dweb:/ipfs/QmVFY2JkCmuYNnA7rgaELjfU8mvtC2TnsqoU8zLtk1dhRQ"
+			]
+		}
+	},
+	"version": 1
+}

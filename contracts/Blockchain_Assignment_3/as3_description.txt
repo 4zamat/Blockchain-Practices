@@ -1,0 +1,89 @@
+                                            Assignment 3
+
+Task 1
+
+Write a contract that contains one function
+
+This function takes two integer arguments number1, number2
+and returns the one that is greater
+If the numbers are equal, return either of them
+
+Task 2
+
+Write a contract that contains one function
+
+This function takes one argument - some number
+Returns true if this number is even
+and false if it is not even
+
+Task 3
+
+Write a contract that contains one function
+
+This function takes three integer arguments a, b and c
+and returns true if
+a is either greater than b and c
+or if a is greater than c and less than b
+otherwise, the function returns false
+
+Task 4
+
+Write a contract that contains one function
+
+This function takes one value - some number, calculates and returns its factorial
+
+Factorial is the product of all numbers from some number n to 1 inclusive
+
+For example, the factorial of the number 5:
+
+5! = 5 * 4 * 3 * 2 * 1 = 120
+
+Task 5
+
+Write a contract that contains one function
+
+This function helps calculate the profit from a bank deposit
+It takes three values - the initial deposit amount, the interest rate, and the number of months for which the deposit is made
+
+The function returns the deposit amount after months
+
+This tariff uses compound interest - at the end of each month, an amount equal to the rate of interest on the current deposit amount is added to the deposit
+
+Task 6
+
+Write a contract that contains one function
+
+This function takes three integer arguments number1, number2, and operation
+
+If the operation value is 1, the function returns the sum of number1 and number2
+
+If the operation value is 2, the function returns the difference of number1 and number2
+
+If the operation value is 3, the function returns the multiplication of number1 and number2
+
+If the operation value is 4, the function returns the ratio of number1 and number2
+
+Task 7
+
+Write a contract that contains one function
+
+This function takes a number as an argument and returns a Boolean value
+true - if it is a prime number
+false - if it is not a prime number
+
+A prime number is one that is divisible only by 1 and itself
+
+Problem 8
+
+Write a contract that contains one function
+
+This function takes one value - the number n and returns the n-th element of the Fibonacci series
+
+Problem 9
+
+Write a contract that contains one function
+
+This function takes two arguments, the numbers number1 and number2
+The function returns the greatest common divisor of these two numbers
+
+hint: the Euclidean algorithm will help you find the greatest common divisor

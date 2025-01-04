@@ -1,0 +1,110 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getSumma",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getValue16",
+				"outputs": [
+					{
+						"internalType": "int16",
+						"name": "",
+						"type": "int16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getValue256",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int16",
+						"name": "number",
+						"type": "int16"
+					}
+				],
+				"name": "setNumber16",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "number",
+						"type": "int256"
+					}
+				],
+				"name": "setNumber256",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_1/Example_Codes/as1_task2.sol": "task2"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_1/Example_Codes/as1_task2.sol": {
+			"keccak256": "0x8b873ef48502107b58042c9e594577eeaabbe4d1f2cfe65b026581cda4c51158",
+			"urls": [
+				"bzz-raw://e50868bd5907ada2228c2d4fcd08094741ca40ee9b8246f9980821af8ae7fa15",
+				"dweb:/ipfs/QmQaPYtfycNwDtrBHrDZLjSFsiFvGFeTwHSo75X3yApeNz"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,73 @@
+                                                              Example 7 (Assignment 2)
+Task 1
+
+Memory modifiers in functions
+
+Condition
+Write a contract that contains two unsigned numeric variables number1 and number2
+This contract must also contain the following functions:
+• a function that initializes these variables with values
+• a function that returns the values ​​of these variables
+• a function that takes one argument - an unsigned number, and returns the sum of this number and the variables number1 and number2
+• a function that takes two integers as arguments and returns their sum.
+
+Task 2
+
+Access modifiers in functions
+
+Condition
+Create a contract that contains one variable - number
+As well as five functions:
+• setNumberPublic(uint8 _number) with the public access modifier
+• calls the setNumberInternal() function, passing _number as an argument
+• setNumberExternal(uint8 _number ) with the external access modifier
+• calls the setNumberPrivate() function, passing _number as an argument
+• setNumberInternal(uint8 _number ) with the internal access modifier
+• initializes the number variables with the received values
+• setNumberPrivate(uint8 _number ) with the private access modifier
+• initializes the number variables with the received values
+• getNumber()
+• returns the value of number
+
+Task 3
+
+Iterator
+
+Condition
+Write a contract that contains two public variables - number and iterator
+And also functions:
+• setNumber(_number ) returns(int256)
+• takes one value _number and initializes the variable number with it
+• also in this function the iteration() function is called, the value returned by this function is stored in the local variable _iterator
+• returns the value of the variable _iterator
+• iteration() returns(int256)
+• increases the value of the variable iterator by one
+• returns the value of the variable iterator
+
+Task 4
+
+Multi-calculator
+
+Condition
+Write a contract that contains four public variables - sum, sub, mult and div
+And also functions:
+• start(number1, number1) returns(int256, int256, int256, int256)
+• takes two values ​​number1 and number1
+• calls the functions addition(), subtraction(), multiplication() and division(), passing them the variables number1 and number1 as arguments
+• calls the function getResult(), storing the result of its execution in local variables _sum, _sub, _mult, _div
+• returns the values ​​of the variables _sum, _sub, _mult, _div
+• addition(number1, number1)internal
+• takes two values ​​number1 and number1
+• stores their sum in the variable sum
+• subtraction(number1, number1)internal
+• takes two values ​​number1 and number1
+• stores their difference in the variable sub
+• multiplication(number1, number1)internal
+• takes two values ​​number1 and number1
+• stores their product in the variable mult
+• division(number1, number1)internal
+• takes two values ​​number1 and number1
+• stores their product in the variable div
+• getResult()internal returns(int256, int256, int256, int256)
+• returns the values ​​of the variables sum, sub, mult, div
+

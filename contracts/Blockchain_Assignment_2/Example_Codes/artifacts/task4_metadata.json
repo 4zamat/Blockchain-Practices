@@ -1,0 +1,136 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "div",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mult",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "number1",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "number2",
+						"type": "int256"
+					}
+				],
+				"name": "start",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sub",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sum",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_2/Example_Codes/as2_ex_task4.sol": "task4"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_2/Example_Codes/as2_ex_task4.sol": {
+			"keccak256": "0xe1c3dbb248016877abf916a10613a8ee856678d1c91d1a73ebb8b1159f2cf456",
+			"urls": [
+				"bzz-raw://23aec14d714319466453cd0f84ce0c2a6cac5b30324c1b5543b0e86418550f4f",
+				"dweb:/ipfs/QmZzfVLXLoK11BATnxi1p25kA1FfnTib1zaYm9n359g1QP"
+			]
+		}
+	},
+	"version": 1
+}

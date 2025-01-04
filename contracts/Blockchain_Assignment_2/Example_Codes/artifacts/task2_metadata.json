@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_number",
+						"type": "uint8"
+					}
+				],
+				"name": "setNumberExternal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_number",
+						"type": "uint8"
+					}
+				],
+				"name": "setNumberPublic",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_2/Example_Codes/as2_ex_task2.sol": "task2"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_2/Example_Codes/as2_ex_task2.sol": {
+			"keccak256": "0x7052fa5c84449737e95e2c53b2aa84b71c025e70009f181e31bfee2e982858b2",
+			"urls": [
+				"bzz-raw://fe7592cf6e89cb26286ab7b90a88419c5d39f30a325abd4aaf2a66e73b2845fc",
+				"dweb:/ipfs/Qmd3ft7RfXDwBhUb9caANLeDY7z7uWw2XDznHVce8RLrM5"
+			]
+		}
+	},
+	"version": 1
+}
