@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "number1",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "number2",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "operation",
+						"type": "uint8"
+					}
+				],
+				"name": "calculate",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_3/Task_Codes/as3_task6.sol": "Calculator"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_3/Task_Codes/as3_task6.sol": {
+			"keccak256": "0xf6d09324058270ff695062d344ee21315148d80933342a551a4a2d03a4cb9e64",
+			"urls": [
+				"bzz-raw://3b9f0becd1c60eadd22215bb49189391982f4a7f0f399a80974a239cafe40a77",
+				"dweb:/ipfs/QmUZqVLADDvmf1Cf3eEBtcqSZAdZdK6Z49sh3DpzKSeHjV"
+			]
+		}
+	},
+	"version": 1
+}

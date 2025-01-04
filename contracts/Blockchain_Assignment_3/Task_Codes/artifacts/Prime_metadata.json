@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					}
+				],
+				"name": "isPrime",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_3/Task_Codes/as3_task7.sol": "Prime"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_3/Task_Codes/as3_task7.sol": {
+			"keccak256": "0x30adf4ff78ed25101107a7547b74d2b82b8ba0431adfd5dc81cc7483cc0ffc60",
+			"urls": [
+				"bzz-raw://14e83ead33888f1be001aed752c346a7ef117533bb4c117dc64fd78250b09836",
+				"dweb:/ipfs/Qmer6Q19rHw6JfstTvaZPEGxQFYkkAteqeXkZsM5S3m5mL"
+			]
+		}
+	},
+	"version": 1
+}

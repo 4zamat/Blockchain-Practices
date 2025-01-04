@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "getFibonacci",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_3/Task_Codes/as3_task8.sol": "Fibonacci"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_3/Task_Codes/as3_task8.sol": {
+			"keccak256": "0xc540ae841181deec8a37f06d3725a346b16df1ca76fbba71058a4754c376dfe3",
+			"urls": [
+				"bzz-raw://23691dfa48770c6cc5c55843062e1c0bb8f3f515adcad20d5604a381f164512d",
+				"dweb:/ipfs/QmZufYFTivVVxyK4VyUun19NvKaFfC2q7SXLeQMhGurtQn"
+			]
+		}
+	},
+	"version": 1
+}

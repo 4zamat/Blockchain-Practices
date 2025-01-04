@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateFactorial",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_3/Task_Codes/as3_task4.sol": "FactorialCalculator"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_3/Task_Codes/as3_task4.sol": {
+			"keccak256": "0xee38a4b8203b99e01be67c2148c3bf01d6177daa88729b0992d852fe8bb24fc3",
+			"urls": [
+				"bzz-raw://dd11a8707276ca5a161b9a6d818919e32fa8f30f1dd96f643cf1d024f83498c8",
+				"dweb:/ipfs/QmNRPPYTJU4T9M2DfTyY2pivRq1wtALbuLYM3ewERt1JSN"
+			]
+		}
+	},
+	"version": 1
+}
