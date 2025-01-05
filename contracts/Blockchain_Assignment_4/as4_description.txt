@@ -1,0 +1,136 @@
+                                                      Example 13
+Task 1
+Research the msg object
+Write a contract to research the properties of the msg object
+
+This contract will contain variables:
+● uint256 public a
+● uint8 public b
+● string public str
+● address public sender
+● uint256 public value
+● bytes public data
+● bytes4 public sig
+And a function that
+● takes three arguments, which initialize the variables a, b, str
+● initializes the variables sender, value, data, sig with the values ​​of the attributes of the global msg object
+● the memory modifier of the function must be payable - that is, this function can accept ETH
+
+Research the operation of this contract and the values ​​that the variables accept with different arguments
+
+Task 2
+
+Whoever is first gets the contract
+
+Write a contract that contains one variable
+address owner = address(0);
+
+and two functions:
+
+setOwner() returns(bool)
+
+if this function is called for the first time, i.e. the owner value is equal to address(0), then the owner variable stores the address of the person who called this function and returns true
+if this function is not called for the first time, i.e. the owner value is not equal to address(0), then false is returned
+
+changeOwner(address newOwner) returns(bool)
+
+if this function is called from the address of the contract owner, i.e. the address stored in the owner variable, then the owner variable stores the value of newOwner and returns true
+otherwise, false is returned
+
+Task 3
+
+Contract or not?
+
+Write a contract that has two functions
+
+the first function takes an address as an argument and returns true if the passed address is a contract address and false if it is a simple account address
+
+The second function takes an address as an argument and checks whether it is a contract address.
+If this is a contract address, then the code of this contract matches the code of the current contract
+
+If the passed address is not a contract, returns the string “This is not a contract”
+If the passed address is another contract, returns the string “This is another contract”
+If the passed address is the same contract as the current one, then returns the string “The twin Brother!”
+
+Task 4
+
+Account balance research
+
+Write a contract that has three functions
+● getContractBalance()
+○ returns the current contract balance
+● getSenderBalance()
+○ returns the current balance of the one who called this function
+● getAddressBalance(address _adr)
+○ address _adr - account address
+○ returns the current balance of this account
+
+Task 5
+
+Wallet
+
+Write a contract with one variable owner - the address of the contract owner
+and the following functions:
+
+● receive()
+● setOwner() returns(bool)
+○ makes the first caller of this function the owner of the contract
+● getContractBalance()
+○ returns the current contract balance
+● transferEthToAddress(address payable _adr, uint256 value)
+○ the function sends the value of Eth to the address _adr
+○ this function only works if it is called by the current owner of the contract
+● changeOwner(address newOwner)
+○ the function changes the address of the contract owner to newOwner
+○ this function only works if it is called by the current owner of the contract, otherwise it throws the error "You are not owner"
+
+Task 6
+
+Transfer of Ether
+
+Write a contract that has
+six functions
+● receive()
+● getContractBalance()
+○ returns the current balance of the contract
+● getMyBalance()
+○ returns the current balance of the one who called this function
+● getAddressBalance(address _adr)
+○ _adr - account address
+○ returns the current balance of the account _adr
+● giveMeEth(uint256 value)
+○ value - amount of Eth
+○ If there are enough funds on the contract, then the function sends value Eth to the address of the one who called the function, otherwise - does nothing
+● transferEthToAddress(address _adr, uint256 value)
+○ _adr - account address
+○ value - amount of Eth
+○ If there are enough funds on the contract, the function sends the value of Eth to the address _adr, otherwise - does nothing
+
+Task 7
+Donation
+
+Write a contract for collecting donations
+● Implement a dictionary donators in the contract to store information about who donated how much. In this dictionary:
+○ the key is the donator's address
+○ the value is the donation amount
+In addition, four methods must be implemented:
+● setOwner() returns(bool)
+○ makes the first person to call this function the owner of the contract
+● donate() payable
+○ This is a method for donating
+○ this method records information in donators - the address of the person who called the method and the amount sent when calling
+● getDonater(address _donatorAdr)
+○ _donatorAdr is the address of the donator
+○ returns the amount of donations made from the address _donatorAdr
+● getBalance()
+○ if the method is called by the contract owner - returns the balance of the contract
+○ if the method is NOT called by the contract owner - returns 0
+
+Task 8
+
+Send the ether equally
+
+Write a contract that has:
+● A method that accepts as argument array of addresses and sending equal parts of the ether that was received to each address. At the same time, another such part must remain on the balance of the contract.
+○ Let's imagine that an array of 4 addresses was passed to this method and with the call
+
