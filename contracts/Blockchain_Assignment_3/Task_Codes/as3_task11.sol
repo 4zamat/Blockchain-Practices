@@ -9,7 +9,7 @@ contract PrimeNumbers {
         uint256[] memory primes = new uint256[](n);
         uint256 count = 0;
 
-        // Helper function to check if a number is prime
+        // is prime
         for (uint256 i = 2; i <= n; i++) {
             if (isPrime(i)) {
                 primes[count] = i;
@@ -17,16 +17,15 @@ contract PrimeNumbers {
             }
         }
 
-        // Resize the primes array to fit only the prime numbers
+        // fit only the prime numbers
         uint256[] memory result = new uint256[](count);
         for (uint256 i = 0; i < count; i++) {
             result[i] = primes[i];
         }
 
-        return result; // Return the array of prime numbers
+        return result;
     }
 
-    // Helper function to check if a number is prime
     function isPrime(uint256 num) internal pure returns (bool) {
         if (num < 2) {
             return false;
