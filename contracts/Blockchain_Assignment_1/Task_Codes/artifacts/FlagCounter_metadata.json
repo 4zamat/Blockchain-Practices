@@ -7,12 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "balance",
+				"name": "counter",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint128",
 						"name": "",
-						"type": "uint256"
+						"type": "uint128"
 					}
 				],
 				"stateMutability": "view",
@@ -21,31 +21,24 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
+						"internalType": "uint128",
+						"name": "value",
+						"type": "uint128"
 					}
 				],
-				"name": "deposit",
+				"name": "decrementCounter",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "doubleBalance",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
+				"name": "flag",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bool",
 						"name": "",
-						"type": "uint256"
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -53,40 +46,48 @@
 			},
 			{
 				"inputs": [],
-				"name": "resetBalance",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "getValues",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "address payable",
-						"name": "to",
-						"type": "address"
+						"internalType": "uint128",
+						"name": "value",
+						"type": "uint128"
 					}
 				],
-				"name": "transferBalance",
+				"name": "incrementCounter",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "withdraw",
+				"inputs": [],
+				"name": "resetCounter",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "receive"
+				"inputs": [],
+				"name": "toggleFlag",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -102,7 +103,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Blockchain_Assignment_1/Task_Codes/t_as1_task3.sol": "SimpleBank"
+			"contracts/Blockchain_Assignment_1/Task_Codes/t_as1_task2.sol": "FlagCounter"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -116,11 +117,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Blockchain_Assignment_1/Task_Codes/t_as1_task3.sol": {
-			"keccak256": "0x4608f4d81378b12aaed80c42fa5354dbf4fda474bf37e4c32e0d62a46a01d457",
+		"contracts/Blockchain_Assignment_1/Task_Codes/t_as1_task2.sol": {
+			"keccak256": "0x9772a8476ce0951d8a0403c216ff38ae2bc659c42a0118ecc4d01cb9e76d0ab0",
 			"urls": [
-				"bzz-raw://74b27bc977c703e418c4a43a753b5d34202fc1fe24cf026f43a72cf74429df82",
-				"dweb:/ipfs/QmZLb5KBMxUc1iWauXwXUsHvpu68KMZLBRqM5Pp2QpdWYd"
+				"bzz-raw://666376d56e7e875088ac786bbf23d0403916166169140f40df2071e110935a37",
+				"dweb:/ipfs/QmQLrMxG1btVNGbnK8knEt2TN7adq5vPrBucjPcyU7fyRF"
 			]
 		}
 	},
