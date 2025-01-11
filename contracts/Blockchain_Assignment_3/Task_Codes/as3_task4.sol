@@ -1,26 +1,20 @@
-// Task 4
-
-// Write a contract that contains one function
-
-// This function takes one value - some number, calculates and returns its factorial
-
-// Factorial is the product of all numbers from some number n to 1 inclusive
-
-// For example, the factorial of the number 5:
-
-// 5! = 5 * 4 * 3 * 2 * 1 = 120
-
 pragma solidity ^0.8.15;
 
-contract FactorialCalculator {
-    function calculateFactorial(uint256 number) public pure returns (uint256) {
-        require(number >= 0, "Number must be non-negative");
+contract PalindromeChecker {
+    // Function to check if a number is a palindrome
+    function isPalindrome(uint256 n) public pure returns (bool) {
+        uint256 original = n; // Store the original number
+        uint256 reversed = 0;
+        uint256 remainder;
 
-        uint256 factorial = 1;
-        for (uint256 i = 1; i <= number; i++) {
-            factorial *= i;
+        // Reverse the digits of the number
+        while (n > 0) {
+            remainder = n % 10; // Get the last digit
+            reversed = reversed * 10 + remainder; // Build the reversed number
+            n /= 10; // Remove the last digit
         }
 
-        return factorial;
+        // Check if the original number equals the reversed number
+        return original == reversed;
     }
 }

@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "input",
+						"type": "string"
+					}
+				],
+				"name": "reverseString",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_3/Task_Codes/as3_task2.sol": "StringReverser"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_3/Task_Codes/as3_task2.sol": {
+			"keccak256": "0x4e5952a2813d6a92133442d53685805999a94e97af5329a26512218045d29694",
+			"urls": [
+				"bzz-raw://aa0439a39a3e79f834ea135e196fc87842695bc1f2bdbc0c47743aee1877cb42",
+				"dweb:/ipfs/QmaR8jNqPoVL6kwe21muctfwAkdmRmsP6aTdzp4V3Vs2Zt"
+			]
+		}
+	},
+	"version": 1
+}

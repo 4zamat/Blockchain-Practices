@@ -1,0 +1,126 @@
+                                                                     Assignment 5
+
+Task 1
+
+Write a contract with one state variable text of type string.
+
+The contract should also contain two functions:
+
+A function to update the value of text with a new string argument.
+
+A function with the view access modifier to return the current value of text.
+
+
+
+---
+
+Task 2
+
+Write a contract with two state variables:
+
+A boolean variable flag.
+
+An unsigned 128-bit integer counter.
+
+
+The contract should also contain the following five functions:
+
+1. A function to toggle the value of flag (true -> false or false -> true).
+
+
+2. A function to reset counter to zero.
+
+
+3. A function to increment counter by a given value.
+
+
+4. A function to decrement counter by a given value.
+
+
+5. A view function to return the current values of flag and counter.
+
+
+
+
+---
+
+Task 3
+
+Write a contract that acts as a simple bank system with:
+
+A state variable balance of type uint256.
+
+
+The contract should include six functions:
+
+1. A function to deposit funds (add to the balance).
+
+
+2. A function to withdraw funds (subtract from the balance).
+
+
+3. A function to check the current balance (view function).
+
+
+4. A function to double the balance.
+
+
+5. A function to reset the balance to zero.
+
+
+6. A function to transfer the balance to another contract address (requires address input).
+
+
+
+
+---
+
+Task 4
+
+Write a contract with the following properties:
+
+Two variables a and b of type int64.
+
+A function to set the values of a and b.
+
+Four separate functions to:
+
+1. Swap the values of a and b.
+
+
+2. Return the larger of a and b.
+
+
+3. Return the smaller of a and b.
+
+
+4. Check if a and b are equal, returning true or false.
+
+
+
+
+
+---
+
+Task 5
+
+Write a contract to manage a leaderboard system with:
+
+A mapping scores that stores player addresses as keys and their scores (uint16) as values.
+
+
+The contract should include the following functionality:
+
+1. A function to set a player’s score.
+
+
+2. A function to retrieve a player’s score.
+
+
+3. A function to reset a player’s score.
+
+
+4. A function to calculate the total score of all players.
+
+
+5. A function to determine the player with the highest score.

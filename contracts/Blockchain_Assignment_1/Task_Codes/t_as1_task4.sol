@@ -1,30 +1,33 @@
 pragma solidity ^0.8.15;
 
-contract Calculator {
-    // Function to perform addition
-    function add(int256 number1, int256 number2) public pure returns (int256) {
-        return number1 + number2;
+contract CompareIntegers {
+    // State variables to store a and b
+    int64 public a;
+    int64 public b;
+
+    // Function to set the values of a and b
+    function setValues(int64 _a, int64 _b) public {
+        a = _a;
+        b = _b;
     }
 
-    // Function to perform subtraction
-    function subtract(int256 number1, int256 number2) public pure returns (int256) {
-        return number1 - number2;
+    // Function to swap the values of a and b
+    function swapValues() public {
+        (a, b) = (b, a); // Swap a and b
     }
 
-    // Function to perform multiplication
-    function multiply(int256 number1, int256 number2) public pure returns (int256) {
-        return number1 * number2;
+    // Function to return the larger of a and b
+    function getLarger() public view returns (int64) {
+        return a >= b ? a : b; // Return a if a >= b, otherwise return b
     }
 
-    // Function to perform division
-    function divide(int256 number1, int256 number2) public pure returns (int256) {
-        require(number2 != 0, "Division by zero is not allowed");
-        return number1 / number2;
+    // Function to return the smaller of a and b
+    function getSmaller() public view returns (int64) {
+        return a <= b ? a : b; // Return a if a <= b, otherwise return b
     }
 
-    // Function to find the remainder of division
-    function remainder(int256 number1, int256 number2) public pure returns (int256) {
-        require(number2 != 0, "Division by zero is not allowed");
-        return number1 % number2;
+    // Function to check if a and b are equal
+    function isEqual() public view returns (bool) {
+        return a == b; // Return true if a == b, otherwise false
     }
 }

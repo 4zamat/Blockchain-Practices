@@ -1,20 +1,26 @@
-// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.15;
 
-contract IteratorExample {
-    int public number; // Public variable to store the number
-    int public iterator; // Public variable to track iterations
+contract StringStorage {
+    // State variable to store the string
+    string public text;
 
-    // Function to set the number and call iteration
-    function setNumber(int _number) public returns (int256) {
-        number = _number; // Initialize the number variable
-        int _iterator = iteration(); // Call iteration and store its return value
-        return _iterator; // Return the local variable _iterator
+    // Function to initialize the string
+    function setText(string memory _text) public {
+        text = _text; // Set the text variable to the provided value
     }
 
-    // Function to increment the iterator and return its value
-    function iteration() public returns (int256) {
-        iterator += 1; // Increment the iterator by one
-        return iterator; // Return the updated iterator value
+    // Function to append a new string to the existing text
+    function appendText(string memory _newText) public {
+        text = string(abi.encodePacked(text, _newText)); // Concatenate text with _newText
+    }
+
+    // Function to reset the text to an empty string
+    function clearText() public {
+        text = ""; // Set text to an empty string
+    }
+
+    // Function to return the current value of text
+    function getText() public view returns (string memory) {
+        return text; // Return the value of text
     }
 }

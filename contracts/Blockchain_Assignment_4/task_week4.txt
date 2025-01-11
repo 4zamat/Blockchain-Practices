@@ -1,0 +1,191 @@
+                                                       Assignment 13
+
+Task 4
+
+Counter with limitations
+
+Write a contract that implements a counter with restrictions.
+
+The contract must contain:
+
+1. A public variable uint256 public count that stores the current value of the counter.
+
+
+2. A function increment(uint256 value) that:
+
+Increases the counter by value.
+
+Reverts if value is greater than 10.
+
+
+
+3. A function decrement(uint256 value) that:
+
+Decreases the counter by value.
+
+Reverts if value is greater than the current counter value.
+
+
+
+
+Research how the contract behaves with different inputs for the increment and decrement functions.
+
+
+---
+
+Task 5
+
+Guess the number
+
+Write a contract that implements a simple number guessing game.
+
+The contract must contain:
+
+1. A private variable uint256 private secretNumber initialized in the constructor.
+
+
+2. A public function guess(uint256 guessedNumber) that:
+
+Returns true if the guessedNumber equals secretNumber.
+
+Otherwise, returns false.
+
+
+
+
+Create a test script to determine the behavior of the function with different inputs.
+
+
+---
+
+Task 6
+
+Lottery Contract
+
+Create a lottery contract with the following features:
+
+1. A public array address[] public players to store participants.
+
+
+2. A function enter() that:
+
+Requires the sender to send 1 ETH to participate.
+
+Adds the sender’s address to the players array.
+
+
+
+3. A function pickWinner() that:
+
+Can only be called by the owner of the contract.
+
+Picks a random winner from the players array and sends them the contract's balance.
+
+
+
+
+Research how the contract behaves with different numbers of participants.
+
+
+---
+
+Task 7
+
+Access Control
+
+Write a contract that allows restricted access to certain functions:
+
+1. A variable address private admin initialized as the deployer's address.
+
+
+2. A modifier onlyAdmin that restricts access to functions.
+
+
+3. A function changeAdmin(address newAdmin) that:
+
+Changes the admin address.
+
+Can only be called by the current admin.
+
+
+
+4. A function restrictedFunction() that can only be called by the admin.
+
+
+
+Test the contract with calls from different addresses.
+
+
+---
+
+Task 8
+
+Token Contract
+
+Write a simple ERC20-like token contract:
+
+1. Variables string public name, string public symbol, uint256 public totalSupply.
+
+
+2. A mapping mapping(address => uint256) public balances to track token balances.
+
+
+3. Functions transfer(address to, uint256 amount) and balanceOf(address account).
+
+
+
+Test transferring tokens between accounts.
+
+
+---
+
+Task 9
+
+Savings Account
+
+Create a contract for a simple savings account:
+
+1. A mapping mapping(address => uint256) public balances.
+
+
+2. A function deposit() that:
+
+Allows users to send ETH and updates their balance.
+
+
+
+3. A function withdraw(uint256 amount) that:
+
+Allows users to withdraw their ETH if they have enough balance.
+
+
+
+
+Research how the contract behaves with deposits and withdrawals.
+
+
+---
+
+Task 10
+
+Time-Locked Contract
+
+Create a time-locked contract with the following features:
+
+1. A variable uint256 public unlockTime.
+
+
+2. A function setUnlockTime(uint256 time) that sets the unlock time.
+
+
+3. A function withdraw() that:
+
+Allows withdrawal of the contract’s ETH balance.
+
+Can only be called after the unlock time has passed.
+
+
+
+
+Test how the contract behaves when the unlock time is in the future and after it has passed.
+

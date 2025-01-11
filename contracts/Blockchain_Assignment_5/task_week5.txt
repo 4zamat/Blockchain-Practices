@@ -1,0 +1,159 @@
+                                                        Assignment 14
+
+Task 1: Owner-only Variable Setter
+
+Write a contract containing two variables:
+
+1. uint256 value
+
+
+2. address owner
+
+
+
+The contract should include a function setValue(uint256 _value) that updates the variable value.
+If this function is not called by the contract owner, it should revert with the error You are not the owner.
+
+
+---
+
+Task 2: Permissioned Token Transfer
+
+Write a contract containing:
+
+1. A mapping(address => uint256) to track balances.
+
+
+2. A function transfer(address recipient, uint256 amount) that transfers tokens.
+
+
+
+The function should check that the caller has enough balance and revert with the error Insufficient balance if they don’t.
+
+
+---
+
+Task 3: Escrow Contract
+
+Write a contract that:
+
+1. Holds ether in escrow for a specified recipient.
+
+
+2. Includes a function releaseFunds() that only the contract owner can call.
+
+
+
+If anyone else calls it, revert with the error You are not the owner.
+
+
+---
+
+Task 4: Time-Locked Wallet
+
+Create a contract with:
+
+1. A releaseTime variable (a timestamp).
+
+
+2. A deposit() function to accept ETH.
+
+
+3. A withdraw() function that reverts with the error Funds are locked if called before releaseTime.
+
+
+
+
+---
+
+Task 5: Fixed Interest Savings
+
+Write a contract with:
+
+1. A deposit() function that accepts ETH.
+
+
+2. A withdrawWithInterest() function that calculates and transfers the balance + interest to the caller.
+
+
+
+The function should revert with the error Insufficient balance if the contract balance is not enough to cover the withdrawal.
+
+
+---
+
+Task 6: Voting Contract
+
+Write a contract with:
+
+1. A mapping(address => bool) to track votes.
+
+
+2. A vote() function that allows users to cast votes.
+
+
+
+If a user tries to vote more than once, revert with the error Already voted.
+
+
+---
+
+Task 7: Token Minting with Ownership
+
+Write a contract with:
+
+1. A mint(address to, uint256 amount) function that only the owner can call.
+
+
+
+If the function is called by a non-owner, revert with the error Not authorized.
+
+
+---
+
+Task 8: Auction Contract
+
+Write a contract with:
+
+1. A placeBid() function to accept bids.
+
+
+2. A highestBidder and highestBid variable.
+
+
+
+If a bid is lower than the current highest bid, revert with the error Bid too low.
+
+
+---
+
+Task 9: Multi-Signature Wallet
+
+Write a contract with:
+
+1. A list of owners and a threshold.
+
+
+2. A submitTransaction(address recipient, uint256 amount) function.
+
+
+
+The transaction should only execute if at least threshold owners approve it.
+Revert with the error Insufficient approvals if the threshold is not met.
+
+
+---
+
+Task 10: Token Vesting
+
+Write a contract that:
+
+1. Locks tokens for a specified beneficiary until a release date.
+
+
+2. Includes a claimTokens() function to transfer tokens to the beneficiary.
+
+
+
+If called before the release date, revert with the error Tokens are locked.
+

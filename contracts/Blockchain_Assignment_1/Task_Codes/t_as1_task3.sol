@@ -1,37 +1,42 @@
 pragma solidity ^0.8.15;
 
-contract Task3 {
-    int128 value; // Variable to store the value
+contract SimpleBank {
+    uint256 public balance; // State variable to store the balance
 
-    // Function to set the value
-    function setValue(int128 number) public {
-        value = number;
+    // Function to deposit funds (add to the balance)
+    function deposit(uint256 amount) public {
+        balance += amount; // Add the deposit amount to the balance
     }
 
-    // Function to return the sum of value and a given number
-    function getSum(int128 number) public view returns (int128) {
-        return value + number;
+    // Function to withdraw funds (subtract from the balance)
+    function withdraw(uint256 amount) public {
+        require(balance >= amount, "Insufficient balance"); // Ensure enough balance
+        balance -= amount; // Subtract the withdrawal amount from the balance
     }
 
-    // Function to return the difference between value and a given number
-    function getDifference(int128 number) public view returns (int128) {
-        return value - number;
+    // Function to check the current balance
+    function getBalance() public view returns (uint256) {
+        return balance; // Return the current balance
     }
 
-    // Function to return the product of value and a given number
-    function getProduct(int128 number) public view returns (int128) {
-        return value * number;
+    // Function to double the balance
+    function doubleBalance() public {
+        balance *= 2; // Double the balance
     }
 
-    // Function to return the result of dividing value by a given number
-    function getQuotient(int128 number) public view returns (int128) {
-        require(number != 0, "Division by zero is not allowed");
-        return value / number;
+    // Function to reset the balance to zero
+    function resetBalance() public {
+        balance = 0; // Reset the balance to zero
     }
 
-    // Function to return the remainder of dividing value by a given number
-    function getRemainder(int128 number) public view returns (int128) {
-        require(number != 0, "Division by zero is not allowed");
-        return value % number;
+    // Function to transfer the balance to another contract address
+    function transferBalance(address payable to) public {
+        require(address(this).balance >= balance, "Contract balance is less than recorded balance");
+        require(balance > 0, "Balance is zero"); // Ensure there's balance to transfer
+        to.transfer(balance); // Transfer Ether to the specified address
+        balance = 0; // Reset the balance after transfer
     }
+
+    // Fallback function to allow the contract to receive Ether
+    receive() external payable {}
 }

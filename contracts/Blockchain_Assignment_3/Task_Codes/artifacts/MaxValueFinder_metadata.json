@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256[]",
+						"name": "numbers",
+						"type": "int256[]"
+					}
+				],
+				"name": "findMax",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_3/Task_Codes/as3_task5.sol": "MaxValueFinder"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_3/Task_Codes/as3_task5.sol": {
+			"keccak256": "0xb41eb790393b617e8c266613e28310a06cba4a33ac32d0d197b68af0765205cd",
+			"urls": [
+				"bzz-raw://cb305cfc7371fe419b06de11b2c8333329e7acf620e3d8eeb51a90f6c007acd6",
+				"dweb:/ipfs/QmfLWX6LdtXXvp5xWZ6ZspJsE6hY72NpsR232c8WCXSsao"
+			]
+		}
+	},
+	"version": 1
+}

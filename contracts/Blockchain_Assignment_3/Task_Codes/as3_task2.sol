@@ -1,17 +1,16 @@
-// Task 2
-
-// Write a contract that contains one function
-
-// This function takes one argument - some number
-// Returns true if this number is even
-// and false if it is not even
-
 pragma solidity ^0.8.15;
 
-contract EvenCheck {
-    // Function to return the greater of two numbers
-    // If the numbers are equal, it returns either of them
-    function isEven(int256 number) public pure returns (bool) {
-        return number % 2 == 0;
+contract StringReverser {
+    // Function to reverse a string
+    function reverseString(string memory input) public pure returns (string memory) {
+        bytes memory strBytes = bytes(input); // Convert the string to bytes
+        bytes memory reversed = new bytes(strBytes.length); // Create a new bytes array for the reversed string
+
+        // Reverse the string
+        for (uint256 i = 0; i < strBytes.length; i++) {
+            reversed[i] = strBytes[strBytes.length - 1 - i];
+        }
+
+        return string(reversed); // Convert the reversed bytes back to a string and return it
     }
 }

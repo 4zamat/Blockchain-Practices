@@ -1,15 +1,18 @@
 pragma solidity ^0.8.15;
 
-contract SimpleStorage {
-    int64 value;
+contract TextManager {
+    // State variable to store the text
+    string public text;
 
-    // Function to set the value
-    function setValue(int64 number) public {
-        value = number;
+    // Function to update the value of text
+    function updateText(string memory newText) public {
+        text = newText; // Update the state variable with the new value
     }
 
-    // Function to get the value
-    function getValue() public view returns (int64) {
-        return value;
+    // Function to return the current value of text
+    function getText() public view returns (string memory) {
+        return text; // Return the current value of the state variable
     }
 }
+
+// OK

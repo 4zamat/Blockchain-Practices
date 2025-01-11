@@ -1,0 +1,92 @@
+                                                 Remix 2
+Task 5
+
+Arithmetic Operations with Modifiers
+
+Condition:
+Create a contract that contains:
+
+One unsigned integer variable value.
+
+Four functions:
+
+add(uint256 _value) with a public modifier that adds _value to value.
+
+subtract(uint256 _value) with an external modifier that subtracts _value from value.
+
+multiply(uint256 _value) with an internal modifier that multiplies value by _value.
+
+divide(uint256 _value) with a private modifier that divides value by _value (ensure no division by zero).
+
+
+
+
+---
+
+Task 6
+
+Token Management
+
+Condition:
+Write a contract that contains:
+
+Two unsigned integer variables: totalSupply and balance.
+
+Functions:
+
+mint(uint256 _amount) to add _amount to totalSupply.
+
+transfer(uint256 _amount) to decrease balance by _amount.
+
+receiveTokens(uint256 _amount) to increase balance by _amount.
+
+getTokenInfo() to return the totalSupply and balance values.
+
+
+
+
+---
+
+Task 7
+
+String Storage
+
+Condition:
+Write a contract that stores and manages strings:
+
+A string variable text.
+
+Functions:
+
+setText(string memory _text) to initialize text.
+
+appendText(string memory _newText) to concatenate _newText with text.
+
+clearText() to reset text to an empty string.
+
+getText() to return the current value of text.
+
+
+
+
+---
+
+Task 8
+
+Voting System
+
+Condition:
+Write a contract that implements a simple voting system:
+
+Two public variables: votesFor and votesAgainst.
+
+Functions:
+
+voteFor() to increment votesFor.
+
+voteAgainst() to increment votesAgainst.
+
+getVotes() to return the values of votesFor and votesAgainst.
+
+resetVotes() with an internal modifier to reset both counters to zero.
+

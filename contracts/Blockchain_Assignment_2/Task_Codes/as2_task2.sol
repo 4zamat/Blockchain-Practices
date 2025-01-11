@@ -1,32 +1,28 @@
 pragma solidity ^0.8.15;
 
-contract AccessModifiersExample {
-    uint8 number;
+contract TokenManagement {
+    // State variables
+    uint256 public totalSupply; // Total supply of tokens
+    uint256 public balance;     // Balance of tokens
 
-    // Function to get the value of the number variable
-    function getNumber() public view returns (uint8) {
-        return number;
+    // Function to mint tokens
+    function mint(uint256 _amount) public {
+        totalSupply += _amount; // Add the amount to totalSupply
     }
 
-    // Public function to set the number
-    // Calls the internal function setNumberInternal
-    function setNumberPublic(uint8 _number) public {
-        setNumberInternal(_number);
+    // Function to transfer tokens
+    function transfer(uint256 _amount) public {
+        require(balance >= _amount, "Insufficient balance"); // Ensure enough balance to transfer
+        balance -= _amount; // Decrease balance by _amount
     }
 
-    // External function to set the number
-    // Calls the private function setNumberPrivate
-    function setNumberExternal(uint8 _number) external {
-        setNumberPrivate(_number);
+    // Function to receive tokens
+    function receiveTokens(uint256 _amount) public {
+        balance += _amount; // Increase balance by _amount
     }
 
-    // Internal function to set the number
-    function setNumberInternal(uint8 _number) internal {
-        number = _number;
-    }
-
-    // Private function to set the number
-    function setNumberPrivate(uint8 _number) private {
-        number = _number;
+    // Function to get token information
+    function getTokenInfo() public view returns (uint256, uint256) {
+        return (totalSupply, balance); // Return totalSupply and balance
     }
 }

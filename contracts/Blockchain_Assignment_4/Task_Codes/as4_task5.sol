@@ -1,35 +1,34 @@
 pragma solidity ^0.8.15;
 
-contract Wallet {
-    address public owner = address(0); // Variable to store the owner's address
+contract SimpleToken {
+    // Token details
+    string public name;
+    string public symbol;
+    uint256 public totalSupply;
 
-    // Fallback function to receive Ether
-    receive() external payable {}
+    // Mapping to track balances
+    mapping(address => uint256) public balances;
 
-    // Function to set the owner (first caller becomes the owner)
-    function setOwner() external returns (bool) {
-        if (owner == address(0)) {
-            owner = msg.sender; // Set the owner to the first caller
-            return true;
-        }
-        return false; // Return false if the owner is already set
+    // Constructor to initialize the token details and assign totalSupply to the deployer
+    constructor(string memory _name, string memory _symbol, uint256 _totalSupply) {
+        name = _name;
+        symbol = _symbol;
+        totalSupply = _totalSupply;
+        balances[msg.sender] = _totalSupply; // Assign all tokens to the deployer
     }
 
-    // Function to get the current contract balance
-    function getContractBalance() external view returns (uint256) {
-        return address(this).balance; // Returns the balance of the contract
+    // Function to transfer tokens
+    function transfer(address to, uint256 amount) public returns (bool) {
+        require(to != address(0), "Transfer to the zero address is not allowed");
+        require(balances[msg.sender] >= amount, "Insufficient balance");
+
+        balances[msg.sender] -= amount; // Deduct tokens from sender
+        balances[to] += amount; // Add tokens to the recipient
+        return true;
     }
 
-    // Function to transfer Ether to a specified address
-    function transferEthToAddress(address payable _adr, uint256 value) external {
-        require(msg.sender == owner, "You are not the owner"); // Only the owner can call this function
-        require(address(this).balance >= value, "Insufficient contract balance"); // Check contract balance
-        _adr.transfer(value); // Transfer Ether to the specified address
-    }
-
-    // Function to change the owner of the contract
-    function changeOwner(address newOwner) external {
-        require(msg.sender == owner, "You are not the owner"); // Only the owner can call this function
-        owner = newOwner; // Change the owner to the new address
+    // Function to get the balance of an account
+    function balanceOf(address account) public view returns (uint256) {
+        return balances[account];
     }
 }

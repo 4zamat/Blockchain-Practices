@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256[]",
+						"name": "numbers",
+						"type": "int256[]"
+					}
+				],
+				"name": "calculateSum",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_3/Task_Codes/as3_task1.sol": "SumCalculator"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_3/Task_Codes/as3_task1.sol": {
+			"keccak256": "0xbdb7d35fee7640b6bffcb42175ad1283ff1a34645afa62d1cdda9416b028661a",
+			"urls": [
+				"bzz-raw://a36fdbcc571a51c812def43b5d70acfe01da036c4c368d6bb38dc6b8fb2a7130",
+				"dweb:/ipfs/QmWtEP6CpvxuLAVjH4PLN8p4FzaFwjtqyt9BDCTb8pXpeA"
+			]
+		}
+	},
+	"version": 1
+}

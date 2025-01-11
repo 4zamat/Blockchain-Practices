@@ -1,28 +1,19 @@
-// Task 5
-
-// Write a contract that contains one function
-
-// This function helps calculate the profit from a bank deposit
-// It takes three values - the initial deposit amount, the interest rate, and the number of months for which the deposit is made
-
-// The function returns the deposit amount after months
-
-// This tariff uses compound interest - at the end of each month, an amount equal to the rate of interest on the current deposit amount is added to the deposit
-
 pragma solidity ^0.8.15;
 
-contract BankDeposit {
-    function calculateProfit(uint256 principal, uint256 interestRate, uint256 months) public pure returns (uint256) {
-        require(principal > 0, "Principal amount must be greater than zero");
-        require(interestRate > 0, "Interest rate must be greater than zero");
-        require(months > 0, "Number of months must be greater than zero");
+contract MaxValueFinder {
+    // Function to find the maximum value in an array
+    function findMax(int256[] memory numbers) public pure returns (int256) {
+        require(numbers.length > 0, "Array must not be empty"); // Ensure the array is not empty
 
-        uint256 amount = principal;
+        int256 max = numbers[0]; // Initialize max with the first element
 
-        for (uint256 i = 0; i < months; i++) {
-            amount += (amount * interestRate) / 100; // Compound interest calculation
+        // Iterate through the array to find the maximum value
+        for (uint256 i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i]; // Update max if a larger value is found
+            }
         }
 
-        return amount;
+        return max; // Return the maximum value
     }
 }

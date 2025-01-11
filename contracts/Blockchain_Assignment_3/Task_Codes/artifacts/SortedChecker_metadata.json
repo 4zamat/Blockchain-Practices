@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256[]",
+						"name": "numbers",
+						"type": "int256[]"
+					}
+				],
+				"name": "isSorted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_3/Task_Codes/as3_task10.sol": "SortedChecker"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_3/Task_Codes/as3_task10.sol": {
+			"keccak256": "0x3f42505a2e308d33ae7bb232f194f8f71ab3f484bf04787ee40edb3d8f456ad2",
+			"urls": [
+				"bzz-raw://ad66ec617d50a08698887d48cde59c3f495a3975c1ced8d198ace22440bb48eb",
+				"dweb:/ipfs/QmXDiz2o4zEc21AtgY5TLN9A82NczZRSFfyEw1n3XGnrds"
+			]
+		}
+	},
+	"version": 1
+}

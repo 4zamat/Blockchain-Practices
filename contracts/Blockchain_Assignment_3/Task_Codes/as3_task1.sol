@@ -1,13 +1,15 @@
 pragma solidity ^0.8.15;
 
-contract GreaterNumber {
-    // Function to return the greater of two numbers
-    // If the numbers are equal, it returns either of them
-    function getGreater(int256 number1, int256 number2) public pure returns (int256) {
-        if (number1 >= number2) {
-            return number1;
-        } else {
-            return number2;
+contract SumCalculator {
+    // Function to calculate the sum of all elements in the list
+    function calculateSum(int256[] memory numbers) public pure returns (int256) {
+        int256 sum = 0;
+
+        // Iterate through the array and calculate the sum
+        for (uint256 i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
         }
+
+        return sum;
     }
 }

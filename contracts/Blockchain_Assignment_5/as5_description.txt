@@ -1,0 +1,92 @@
+Task 1
+
+require - start
+
+Write a contract containing two variables:
+
+some string str and the address of the contract owner owner
+
+And one string that takes one argument - the string _str and its str
+
+If this function is not called by the contract owner, the error “You are not owner” is thrown
+
+Task 2
+
+Auto payment
+
+Write a contract that contains some address autoPay and the number minDonate of the function:
+
+setMinDonate(uint256 _minDonate )
+If this function is not called by the contract owner, the error “You are not owner” is thrown
+Initializes the variable minDonate with the value _minDonate
+
+setAddress(address _autoPay )
+If this function is not called by the contract owner, the error “You are not owner” is thrown
+Initializes the variable autoPay with the value _autoPay
+
+donate() payable
+If the amount of ether sent with the function is less, than minDonate , throws the error “You're a greedy”
+
+1% of the funds transferred with the function is sent to the autoPay address
+
+withdraw(uint256 value)
+If this function is not called by the contract owner, throws the error “You are not owner”
+If value is greater than the contract balance, throws the error “You are not owner”
+Sends value ETH to the contract owner’s address
+
+Task 3
+
+Autopayment - modifiers
+
+Replace all require in the functions of the previous contract with modifiers
+
+Task 4
+
+Custom wallet 1
+
+Write a contract with the following functions:
+● receive()
+● getBalance()
+○ returns the contract balance
+● transferEth(address payable recipient, uint256 value)
+○ sends value Eth to the recipient’s address
+○ if the function is not called by the contract owner - throws the error “You are not owner"
+● changeOwner(address newOwner)
+○ the function changes the address of the contract owner to newOwner
+○ if the function is called not by the owner of the contract - throws the error "You are not owner"
+
+Task 5
+
+Custom wallet 2
+
+In the previous task, some functions use the same checks
+Improve this contract:
+● write a modifier that performs the same check
+● remove require() from the functions
+● add the modifier you wrote to them
+
+Task 6
+
+Custom wallet 3
+
+Modify the contract again by adding custom errors
+To start:
+● remove the modifier created in the previous task from the functions
+● remove the modifier
+● write a fallback() payable function that accepts and returns a byte array
+
+Create several custom errors
+● error badOwner(address sender)
+○ sender - the address of the person who called this function
+○ used if the transferEth() and changeOwner() functions are not called by the contract owner
+
+● error badValue(uint256 balance, uint256 value)
+○ balance - the current balance of the contract
+○ value - the value passed to the transferEth() function
+○ used if the value of value is greater than the current balance of the contract
+
+● error badSignature(bytes input)
+○ input - data from the contract call - msg.data
+○ this error is used in the fallback() function
+
+Correctly apply rvert() and created custom errors in all functions

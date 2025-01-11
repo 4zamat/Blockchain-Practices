@@ -1,0 +1,83 @@
+Task 10
+Write a contract that contains one function.
+This function takes one argument - a list of integers.
+The function returns the sum of all elements in the list.
+
+
+---
+
+Task 11
+Write a contract that contains one function.
+This function takes one argument - a string.
+The function returns the same string but reversed.
+
+
+---
+
+Task 12
+Write a contract that contains one function.
+This function takes one integer argument - n.
+The function returns true if n is a perfect square (e.g., 4, 9, 16) and false otherwise.
+
+
+---
+
+Task 13
+Write a contract that contains one function.
+This function takes one argument - an integer n.
+The function returns true if n is a palindrome (it reads the same backward as forward), otherwise returns false.
+
+
+---
+
+Task 14
+Write a contract that contains one function.
+This function takes an array of integers as an argument.
+The function returns the maximum value in the array.
+
+
+---
+
+Task 15
+Write a contract that contains one function.
+This function takes one argument - a string.
+The function returns the count of vowels (a, e, i, o, u) in the string.
+
+
+---
+
+Task 16
+Write a contract that contains one function.
+This function takes one argument - an array of integers.
+The function returns a new array containing only the even numbers from the original array.
+
+
+---
+
+Task 17
+Write a contract that contains one function.
+This function takes one integer argument n.
+The function returns the sum of the digits of the number n.
+
+
+---
+
+Task 18
+Write a contract that contains one function.
+This function takes two integer arguments, base and exponent.
+The function returns the result of raising base to the power of exponent (base^exponent).
+
+
+---
+
+Task 19
+Write a contract that contains one function.
+This function takes a list of integers and returns true if the list is sorted in ascending order and false otherwise.
+
+
+---
+
+Task 20
+Write a contract that contains one function.
+This function takes an integer n as an argument.
+The function returns a list of all prime numbers less than or equal to n.

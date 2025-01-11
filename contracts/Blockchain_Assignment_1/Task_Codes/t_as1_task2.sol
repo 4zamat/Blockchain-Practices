@@ -1,31 +1,33 @@
 pragma solidity ^0.8.15;
 
-contract Task2 {
-    int16 number16; // 16-bit integer
-    int256 number256; // 256-bit integer
+contract FlagCounter {
+    // State variables
+    bool public flag; // Boolean variable
+    uint128 public counter; // Unsigned 128-bit integer
 
-    // Function to set the value of number16
-    function setNumber16(int16 number) public {
-        number16 = number;
+    // Function to toggle the value of flag
+    function toggleFlag() public {
+        flag = !flag; // Toggle the value of flag
     }
 
-    // Function to set the value of number256
-    function setNumber256(int256 number) public {
-        number256 = number;
+    // Function to reset counter to zero
+    function resetCounter() public {
+        counter = 0; // Reset counter to zero
     }
 
-    // Function to get the value of number16
-    function getNumber16() public view returns (int16) {
-        return number16;
+    // Function to increment counter by a given value
+    function incrementCounter(uint128 value) public {
+        counter += value; // Increment counter by the given value
     }
 
-    // Function to get the value of number256
-    function getNumber256() public view returns (int256) {
-        return number256;
+    // Function to decrement counter by a given value
+    function decrementCounter(uint128 value) public {
+        require(counter >= value, "Counter cannot be negative"); // Ensure counter does not go below zero
+        counter -= value; // Decrement counter by the given value
     }
 
-    // Function to return the sum of number16 and number256
-    function getSum() public view returns (int256) {
-        return number256 + int256(number16);
+    // View function to return the current values of flag and counter
+    function getValues() public view returns (bool, uint128) {
+        return (flag, counter); // Return current values of flag and counter
     }
 }
