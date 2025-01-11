@@ -17,17 +17,15 @@ contract SimpleToken {
         balances[msg.sender] = _totalSupply; // Assign all tokens to the deployer
     }
 
-    // Function to transfer tokens
     function transfer(address to, uint256 amount) public returns (bool) {
         require(to != address(0), "Transfer to the zero address is not allowed");
         require(balances[msg.sender] >= amount, "Insufficient balance");
 
         balances[msg.sender] -= amount; // Deduct tokens from sender
-        balances[to] += amount; // Add tokens to the recipient
+        balances[to] += amount; // tokens to recipient
         return true;
     }
 
-    // Function to get the balance of an account
     function balanceOf(address account) public view returns (uint256) {
         return balances[account];
     }
