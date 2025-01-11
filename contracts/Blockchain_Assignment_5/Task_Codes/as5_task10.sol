@@ -19,25 +19,24 @@ contract TokenVesting {
         tokenAmount = _tokenAmount;
     }
 
-    // Function to claim tokens after the release date
+    // claim the release date
     function claimTokens() public {
         require(msg.sender == beneficiary, "Only the beneficiary can claim tokens");
         require(block.timestamp >= releaseDate, "Tokens are locked");
 
         uint256 amount = tokenAmount;
-        tokenAmount = 0; // Reset the token amount to prevent reentrancy
+        tokenAmount = 0; // prevent reentrancy
 
-        // Transfer tokens to the beneficiary
+        // Transfer tokens
         payable(beneficiary).transfer(amount);
     }
 
-    // Function to deposit tokens into the vesting contract
+    // into vesting contract
     function depositTokens() public payable {
         require(msg.sender == owner, "Only the owner can deposit tokens");
         require(msg.value == tokenAmount, "Deposit amount must match the locked token amount");
     }
 
-    // Function to check the contract's balance (optional for testing)
     function getContractBalance() public view returns (uint256) {
         return address(this).balance;
     }
