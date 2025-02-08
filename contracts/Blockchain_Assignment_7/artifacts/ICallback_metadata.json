@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "onVotingEnded",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_7/week7_task4.sol": "ICallback"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_7/week7_task4.sol": {
+			"keccak256": "0xd145f66f5fa6b770bdfc5af9d3ed0025e234d6b38d1de938d48c4f2bab4630f6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ecc979fb083089e2d3e62bff239e6dab3a0db8c3e0d30c89f31bdd8ccbe67258",
+				"dweb:/ipfs/QmR1TKo4XVyj9qwV1JeLVZ5VbCcdd6Rioh8Pa2wZHjiYLL"
+			]
+		}
+	},
+	"version": 1
+}

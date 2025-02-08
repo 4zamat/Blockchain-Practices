@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_7/week7_task8.sol": "GenericMapping"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_7/week7_task8.sol": {
+			"keccak256": "0x73745c5825a624bc8e01854b522e78da880bbb394ac268f6061256526bb5a07c",
+			"urls": [
+				"bzz-raw://10a50f4ed171d843862d3611f768b62a51719b0d59c46f4dbaed1a8249dbb12e",
+				"dweb:/ipfs/QmQhiVR2jcBhhDq9hhTM1krWdDXUgqxcr53o96gpZQW3BG"
+			]
+		}
+	},
+	"version": 1
+}

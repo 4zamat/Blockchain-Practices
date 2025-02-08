@@ -1,0 +1,144 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "unlockTime",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes4",
+						"name": "functionSelector",
+						"type": "bytes4"
+					}
+				],
+				"name": "AccessRegistered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes4",
+						"name": "functionSelector",
+						"type": "bytes4"
+					}
+				],
+				"name": "FunctionExecuted",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "accessRegistry",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "unlockTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes4",
+						"name": "functionSelector",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "executeFunction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "delay",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes4",
+						"name": "functionSelector",
+						"type": "bytes4"
+					}
+				],
+				"name": "registerAccess",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Blockchain_Assignment_7/week7_task9.sol": "TimedAccess"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Blockchain_Assignment_7/week7_task9.sol": {
+			"keccak256": "0x2a9d4d6d2918a69db5640aede78b2befc4eda75c496a3dea965b16c66faa824a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0cf4645454dad2f8cc5d54186b60f003a580708435dcca54f775d3fd3ba32aba",
+				"dweb:/ipfs/QmYfyPoVFGm5nXWLoeHGFAzJ59AYB5WKf5jmvqHjAWh5cy"
+			]
+		}
+	},
+	"version": 1
+}
